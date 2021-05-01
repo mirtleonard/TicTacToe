@@ -1,5 +1,5 @@
 var grid = [["", "", ""],["", "", ""],["", "", ""]];
-var player = 'O', moves = 0, line, column;
+var player = 'O', moves = 0;
 
 function winner(line, column) {
 	if (line == -1) {
@@ -85,7 +85,7 @@ function changePlayer() {
 		player = 'X';
 }
 
-function change(id) {
+function move(id) {
 	if ($("#" + id).find('h1').html() != "")
 		return;
 	moves++;
